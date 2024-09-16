@@ -18,7 +18,9 @@ class Employee {
     }
 }
 
-$employee = new Employee('John', 'Doe', 'IT', 'jdoe@me.com', '1234');
+$john = new Employee('John', 'Doe', 'IT', 'jdoe@me.com', '006');
+$tatiana = new Employee('Tatiana', 'Doe', 'MKT', 'tatiana@me.com', '007');
+
 
 echo '<pre>';
 var_dump($employee);
