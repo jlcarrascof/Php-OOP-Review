@@ -18,3 +18,11 @@ $employee->lastname = 'Doe';
 echo '<pre>';
 var_dump($employee);
 echo '</pre>';
+
+$employee2 = new Employee();
+$employee2->name = 'Jane';
+$employee2->lastname = 'Doe';
+
+echo '<pre>';
+var_dump($employee2);
+echo '</pre>';
