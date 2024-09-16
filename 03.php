@@ -2,7 +2,7 @@
 include 'includes/header.php';
 
 
-// Instance of the Employee class
+// Attributes of the Employee class
 class Employee {
 
 }
