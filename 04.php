@@ -8,11 +8,14 @@ class Employee {
     public $department;
     public $email;
     public $code;
+
+    public function __construct() {
+        echo 'Hello World!';
+    }
 }
 
 $employee = new Employee();
-$employee->name = 'John';
-$employee->lastname = 'Doe';
+
 
 echo '<pre>';
 var_dump($employee);
