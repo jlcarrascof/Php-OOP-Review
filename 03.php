@@ -12,6 +12,8 @@ class Employee {
 }
 
 $employee = new Employee();
+$employee->name = 'John';
+$employee->lastname = 'Doe';
 
 echo '<pre>';
 var_dump($employee);
