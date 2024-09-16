@@ -7,3 +7,5 @@ class Employee {
 }
 
 $employee = new Employee();
+
+var_dump($employee);
