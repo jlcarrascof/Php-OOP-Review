@@ -23,5 +23,9 @@ $tatiana = new Employee('Tatiana', 'Doe', 'MKT', 'tatiana@me.com', '007');
 
 
 echo '<pre>';
-var_dump($employee);
+var_dump($john);
+echo '</pre>';
+
+echo '<pre>';
+var_dump($tatiana);
 echo '</pre>';
