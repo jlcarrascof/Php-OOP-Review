@@ -5,3 +5,5 @@ include 'includes/header.php';
 class Employee {
 
 }
+
+$employee = new Employee();
