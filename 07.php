@@ -24,6 +24,7 @@ class Employee {
 }
 
 $john = new Employee('John', 'Doe', 'IT', 'jdoe@me.com', 006);
+$john->employeeName();
 $tatiana = new Employee('Tatiana', 'Doe', 'MKT', 'tatiana@me.com', 007);
 
 
