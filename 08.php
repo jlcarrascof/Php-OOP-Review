@@ -3,7 +3,12 @@ include 'includes/header.php';
 
 // Access modifiers: public, private, protected
 class Employee {
-    public $name;
+
+    // Public: can be accessed from everywhere
+    // Private: can only be accessed from within the class
+    // Protected: can only be accessed from within the class and its subclasses
+
+    protected $name;
     public $lastname;
     public $department;
     public $email;
