@@ -21,6 +21,11 @@ class Employee {
     {
         echo $this->name . ' ' . $this->lastname;
     }
+
+    public function employeeDepartment()
+    {
+        return $this->department;
+    }
 }
 
 $john = new Employee('John', 'Doe', 'IT', 'jdoe@me.com', 006);
@@ -34,5 +39,5 @@ echo '<pre>';
 var_dump($tatiana);
 echo '</pre>';
 
-echo $john->employeeName();
-echo $tatiana->employeeName();
+$department = $john->employeeDepartment();
+echo $department;
