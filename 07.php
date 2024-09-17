@@ -1,7 +1,7 @@
 <?php
 include 'includes/header.php';
 
-// Constructors
+// Methods
 class Employee {
     public $name;
     public $lastname;
@@ -16,10 +16,15 @@ class Employee {
         $this->email = $email;
         $this->code = $code;
     }
+
+    public function employeeName()
+    {
+        echo "Showing employee name";
+    }
 }
 
-$john = new Employee('John', 'Doe', 'IT', 'jdoe@me.com', '006');
-$tatiana = new Employee('Tatiana', 'Doe', 'MKT', 'tatiana@me.com', '007');
+$john = new Employee('John', 'Doe', 'IT', 'jdoe@me.com', 006);
+$tatiana = new Employee('Tatiana', 'Doe', 'MKT', 'tatiana@me.com', 007);
 
 
 echo '<pre>';
