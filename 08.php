@@ -22,11 +22,21 @@ class Employee {
         $this->code = $code;
     }
 
+    public function getName() {
+        return $this->name;
+    }
+
+    public function changeName($name) {
+        $this->name = $name;
+    }
+
 }
 
 $john = new Employee('John', 'Doe', 'IT', 'jdoe@me.com', 006);
 
-echo $john->name;
+echo $john->changeName('Johnny');
+
+echo $john->getName();
 
 echo '<pre>';
 var_dump($john);
