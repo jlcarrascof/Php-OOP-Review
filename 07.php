@@ -19,14 +19,12 @@ class Employee {
 
     public function employeeName()
     {
-        echo "Showing employee name";
+        echo $this->name . ' ' . $this->lastname;
     }
 }
 
 $john = new Employee('John', 'Doe', 'IT', 'jdoe@me.com', 006);
-$john->employeeName();
 $tatiana = new Employee('Tatiana', 'Doe', 'MKT', 'tatiana@me.com', 007);
-
 
 echo '<pre>';
 var_dump($john);
@@ -35,3 +33,6 @@ echo '</pre>';
 echo '<pre>';
 var_dump($tatiana);
 echo '</pre>';
+
+echo $john->employeeName();
+echo $tatiana->employeeName();
