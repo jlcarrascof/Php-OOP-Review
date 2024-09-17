@@ -1,23 +1,16 @@
 <?php
 include 'includes/header.php';
 
-<?php
-include 'includes/header.php';
-
-// Constructors
+// Constructor Property Promotion
 class Employee {
-    public $name;
-    public $lastname;
-    public $department;
-    public $email;
-    public $code;
+    public function __construct(
+        public $name,
+        public $lastname,
+        public $department,
+        public $email,
+        public $code,
+    ) {
 
-    public function __construct($name, $lastname, $department, $email, $code) {
-        $this->name = $name;
-        $this->lastname = $lastname;
-        $this->department = $department;
-        $this->email = $email;
-        $this->code = $code;
     }
 }
 
