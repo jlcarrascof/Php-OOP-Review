@@ -9,7 +9,7 @@ class Employee {
     public $email;
     public $code;
 
-    public function __construct($name, $lastname, $department, $email, $code) {
+    public function __construct(string $name, string $lastname, string $department, string $email, int $code) {
         $this->name = $name;
         $this->lastname = $lastname;
         $this->department = $department;
@@ -18,8 +18,8 @@ class Employee {
     }
 }
 
-$john = new Employee('John', 'Doe', 'IT', 'jdoe@me.com', '006');
-$tatiana = new Employee('Tatiana', 'Doe', 'MKT', 'tatiana@me.com', '007');
+$john = new Employee('John', 'Doe', 'IT', 'jdoe@me.com', 006);
+$tatiana = new Employee('Tatiana', 'Doe', 'MKT', 'tatiana@me.com', 007);
 
 
 echo '<pre>';
