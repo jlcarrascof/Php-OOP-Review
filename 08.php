@@ -1,7 +1,7 @@
 <?php
 include 'includes/header.php';
 
-// Methods
+// Access modifiers: public, private, protected
 class Employee {
     public $name;
     public $lastname;
@@ -20,6 +20,8 @@ class Employee {
 }
 
 $john = new Employee('John', 'Doe', 'IT', 'jdoe@me.com', 006);
+
+echo $john->name;
 
 echo '<pre>';
 var_dump($john);
