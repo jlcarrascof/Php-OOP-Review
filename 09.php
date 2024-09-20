@@ -44,9 +44,14 @@ class Employee {
         return $this->code;
     }
 
+    public function setCode($code) {
+        $this->code = $code;
+    }
+
 }
 
 $john = new Employee('John', 'Doe', 'IT', 'jdoe@me.com', 006);
 
+$john->setCode('2030');
 echo $john->getCode();
 echo $john->getName();
