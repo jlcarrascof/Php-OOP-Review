@@ -47,7 +47,3 @@ $john = new Employee('John', 'Doe', 'IT', 'jdoe@me.com', 006);
 echo $john->setName('Johnny');
 
 echo $john->getName();
-
-echo '<pre>';
-var_dump($john);
-echo '</pre>';
