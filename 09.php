@@ -44,7 +44,7 @@ class Employee {
 
 $john = new Employee('John', 'Doe', 'IT', 'jdoe@me.com', 006);
 
-echo $john->changeName('Johnny');
+echo $john->setName('Johnny');
 
 echo $john->getName();
 
