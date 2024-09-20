@@ -9,10 +9,10 @@ class Employee {
     // Protected: can only be accessed from within the class and its subclasses
 
     protected $name;
-    public $lastname;
-    public $department;
-    public $email;
-    public $code;
+    protected $lastname;
+    protected $department;
+    protected $email;
+    protected $code;
 
     public function __construct($name, $lastname, $department, $email, $code) {
         $this->name = $name;
@@ -38,6 +38,14 @@ class Employee {
 
     public function setName($name) {
         $this->name = $name;
+    }
+
+    public function getCode() {
+        return $this->code;
+    }
+
+    public function setCode($code) {
+        $this->code = $code;
     }
 
 }
