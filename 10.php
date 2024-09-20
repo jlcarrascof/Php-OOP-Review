@@ -10,3 +10,11 @@ class Employee {
     protected $code;
     protected $department;
 }
+
+class Provider {
+    protected $name;
+    protected $lastname;
+    protected $email;
+    protected $phone;
+    protected $enterprise;
+}
