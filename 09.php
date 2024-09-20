@@ -69,5 +69,9 @@ class Employee {
 $john = new Employee('John', 'Doe', 'IT', 'jdoe@me.com', 006);
 
 $john->setCode('2030');
+$john->setLastName('Smith');
+echo $john->setDepartment('HR');
 echo $john->getCode().'-';
 echo $john->getName().'-';
+echo $john->getLastname().'-';
+echo $john->getDepartment();
