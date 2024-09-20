@@ -22,11 +22,21 @@ class Employee {
         $this->code = $code;
     }
 
+    /*
+        * Getters and Setters
+        *
+        * Getters: methods that get the value of a property
+        * Setters: methods that set the value of a property
+        *
+        * Naming convention: getPropertyName, setPropertyName
+
+    */
+
     public function getName() {
         return $this->name;
     }
 
-    public function changeName($name) {
+    public function setName($name) {
         $this->name = $name;
     }
 
