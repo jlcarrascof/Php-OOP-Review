@@ -40,6 +40,22 @@ class Employee {
         $this->name = $name;
     }
 
+    public function getLastname() {
+        return $this->lastname;
+    }
+
+    public function setLastname($lastname) {
+        $this->lastname = $lastname;
+    }
+
+    public function getDepartment() {
+        return $this->department;
+    }
+
+    public function setDepartment($department) {
+        $this->department = $department;
+    }
+
     public function getCode() {
         return $this->code;
     }
