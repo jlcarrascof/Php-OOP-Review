@@ -35,3 +35,6 @@ class Provider {
         $this->enterprise = $enterprise;
     }
 }
+
+$employee = new Employee('John', 'Doe', 'johnny.doe@mail.com', '123456789', '1234', 'IT');
+$provider = new Provider('Jane', 'Doe', 'jane.doe@mail.com', '987654321', 'Doe Enterprise');
