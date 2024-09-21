@@ -20,7 +20,7 @@ class Employee {
     }
 
     public function showInformation() {
-        echo "Name: " . $this->name . ' ' . $this->lastname . ' Email: ' . $this->email;
+        echo "Name: " . $this->name . ' ' . $this->lastname . ' Email: ' . $this->email . ' <br /> ';
     }
 }
 
@@ -38,6 +38,11 @@ class Provider {
         $this->phone = $phone;
         $this->enterprise = $enterprise;
     }
+
+    public function showInformation() {
+        echo "Name: " . $this->name . ' ' . $this->lastname . ' Email: ' . $this->email . ' <br /> ';
+    }
+
 }
 
 $employee = new Employee('John', 'Doe', 'johnny.doe@mail.com', '123456789', '1234', 'IT');
@@ -52,3 +57,4 @@ var_dump($provider);
 echo '</pre>';
 
 $employee->showInformation();
+$provider->showInformation();
