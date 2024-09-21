@@ -26,4 +26,12 @@ class Provider {
     protected $email;
     protected $phone;
     protected $enterprise;
+
+    public function __construct($name, $lastname, $email, $phone, $enterprise) {
+        $this->name = $name;
+        $this->lastname = $lastname;
+        $this->email = $email;
+        $this->phone = $phone;
+        $this->enterprise = $enterprise;
+    }
 }
