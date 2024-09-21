@@ -18,6 +18,10 @@ class Employee {
         $this->code = $code;
         $this->department = $department;
     }
+
+    public function showInformation() {
+        echo "Name: " . $this->name . ' ' . $this->lastname . ' Email: ' . $this->email;
+    }
 }
 
 class Provider {
@@ -46,3 +50,5 @@ echo '</pre>';
 echo '<pre>';
 var_dump($provider);
 echo '</pre>';
+
+$employee->showInformation();
