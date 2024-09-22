@@ -14,6 +14,9 @@ class Person {
         $this->phone = $phone;
     }
 
+    public function showInformation() {
+        echo "Name: " . $this->name . ' ' . $this->lastname . ' Email: ' . $this->email . ' <br /> ';
+    }
 }
 
 // Inheritance
@@ -26,10 +29,6 @@ class Employee extends Person {
         $this->code = $code;
         $this->department = $department;
     }
-
-    public function showInformation() {
-        echo "Name: " . $this->name . ' ' . $this->lastname . ' Email: ' . $this->email . ' <br /> ';
-    }
 }
 
 class Provider extends Person {
@@ -38,10 +37,6 @@ class Provider extends Person {
     public function __construct($name, $lastname, $email, $phone, $enterprise) {
         parent::__construct($name, $lastname, $email, $phone);
         $this->enterprise = $enterprise;
-    }
-
-    public function showInformation() {
-        echo "Name: " . $this->name . ' ' . $this->lastname . ' Email: ' . $this->email . ' <br /> ';
     }
 
 }
