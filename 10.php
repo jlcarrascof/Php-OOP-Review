@@ -7,6 +7,13 @@ class Person {
     protected $email;
     protected $phone;
 
+    public function __construct($name, $lastname, $email, $phone) {
+        $this->name = $name;
+        $this->lastname = $lastname;
+        $this->email = $email;
+        $this->phone = $phone;
+    }
+
 }
 
 // Inheritance
@@ -15,10 +22,7 @@ class Employee extends Person {
     protected $department;
 
     public function __construct($name, $lastname, $email, $phone, $code, $department) {
-        $this->name = $name;
-        $this->lastname = $lastname;
-        $this->email = $email;
-        $this->phone = $phone;
+        parent::__construct($name, $lastname, $email, $phone);
         $this->code = $code;
         $this->department = $department;
     }
