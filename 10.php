@@ -10,7 +10,7 @@ class Person {
 }
 
 // Inheritance
-class Employee {
+class Employee extends Person {
     protected $code;
     protected $department;
 
@@ -28,11 +28,7 @@ class Employee {
     }
 }
 
-class Provider {
-    protected $name;
-    protected $lastname;
-    protected $email;
-    protected $phone;
+class Provider extends Person {
     protected $enterprise;
 
     public function __construct($name, $lastname, $email, $phone, $enterprise) {
