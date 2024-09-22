@@ -46,6 +46,11 @@ class Provider extends Person {
         $this->enterprise = $enterprise;
     }
 
+    public function showInformation()
+    {
+        echo "Name: " . $this->name . ' ' . $this->lastname . ' Email: ' . $this->email  . ' Enterprise: ' . $this->enterprise . ' <br /> ';
+    }
+
 }
 
 $employee = new Employee('John', 'Doe', 'johnny.doe@mail.com', '123456789', '1234', 'IT');
