@@ -7,15 +7,22 @@ class Person {
     protected $email;
     protected $phone;
 
-    public function __construct($name, $lastname, $email, $phone) {
+    public function __construct($name, $lastname, $email, $phone)
+    {
         $this->name = $name;
         $this->lastname = $lastname;
         $this->email = $email;
         $this->phone = $phone;
     }
 
-    public function showInformation() {
+    public function showInformation()
+    {
         echo "Name: " . $this->name . ' ' . $this->lastname . ' Email: ' . $this->email . ' <br /> ';
+    }
+
+    public function getPhone()
+    {
+        return $this->phone;
     }
 }
 
@@ -54,3 +61,5 @@ echo '</pre>';
 
 $employee->showInformation();
 $provider->showInformation();
+echo '<br />';
+echo $provider->getPhone();
