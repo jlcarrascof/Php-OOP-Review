@@ -1,12 +1,16 @@
 <?php
 include 'includes/header.php';
 
-// Inheritance
-class Employee {
+class Person {
     protected $name;
     protected $lastname;
     protected $email;
     protected $phone;
+
+}
+
+// Inheritance
+class Employee {
     protected $code;
     protected $department;
 
