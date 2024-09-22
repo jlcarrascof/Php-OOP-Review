@@ -36,10 +36,7 @@ class Provider extends Person {
     protected $enterprise;
 
     public function __construct($name, $lastname, $email, $phone, $enterprise) {
-        $this->name = $name;
-        $this->lastname = $lastname;
-        $this->email = $email;
-        $this->phone = $phone;
+        parent::__construct($name, $lastname, $email, $phone);
         $this->enterprise = $enterprise;
     }
 
