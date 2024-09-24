@@ -30,4 +30,7 @@ class Employee {
         $this->name = $name;
     }
 
+    public static function getEmployees() {
+        echo "Echo from the static method";
+    }
 }
