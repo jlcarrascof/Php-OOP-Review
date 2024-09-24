@@ -36,3 +36,13 @@ class Employee {
 }
 
 Employee::getEmployees();
+
+$john = new Employee('John', 'Doe', 'IT', 'jdoe@me.com', 006);
+
+echo $john->changeName('Johnny');
+
+echo $john->getName();
+
+echo '<pre>';
+var_dump($john);
+echo '</pre>';
