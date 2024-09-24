@@ -69,4 +69,4 @@ $name = $john->getName();
 
 $db = new DB($name);
 
-var_dump($db);
+$db->save();
