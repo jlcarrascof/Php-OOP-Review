@@ -34,3 +34,5 @@ class Employee {
         echo "Echo from the static method";
     }
 }
+
+Employee::getEmployees();
