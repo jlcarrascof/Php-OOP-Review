@@ -67,8 +67,6 @@ $john = new Employee('John', 'Doe', 'IT', 'jdoe@me.com', 006);
 
 $name = $john->getName();
 
-echo $name;
-
 $db = new DB($name);
 
 var_dump($db);
