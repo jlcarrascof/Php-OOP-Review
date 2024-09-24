@@ -1,5 +1,6 @@
 <?php
 include 'includes/header.php';
+include 'DB.php';
 
 // Communication between classes
 class Employee {
