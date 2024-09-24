@@ -54,13 +54,8 @@ class Provider extends Person {
 
 }
 
-$person = new Person('Johnny', 'People', 'johnny.people@mail.com', '123456789');
 $employee = new Employee('John', 'Doe', 'johnny.doe@mail.com', '123456789', '1234', 'IT');
 $provider = new Provider('Jane', 'Doe', 'jane.doe@mail.com', '987654321', 'Doe Enterprise');
-
-echo '<pre>';
-var_dump($person);
-echo '</pre>';
 
 echo '<pre>';
 var_dump($employee);
