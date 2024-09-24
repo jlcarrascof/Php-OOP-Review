@@ -1,6 +1,7 @@
 <?php
 include 'includes/header.php';
 
+// Abstracts classes
 class Person {
     protected $name;
     protected $lastname;
