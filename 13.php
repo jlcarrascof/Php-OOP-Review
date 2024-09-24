@@ -1,12 +1,8 @@
 <?php
 include 'includes/header.php';
 
-// Getters and Setters
+// Communication between classes
 class Employee {
-
-    // Public: can be accessed from everywhere
-    // Private: can only be accessed from within the class
-    // Protected: can only be accessed from within the class and its subclasses
 
     protected $name;
     protected $lastname;
