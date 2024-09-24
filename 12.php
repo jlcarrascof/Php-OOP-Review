@@ -14,7 +14,8 @@ class Employee {
     public $email;
     public $code;
 
-    public function __construct($name, $lastname, $department, $email, $code) {
+    public function __construct($name, $lastname, $department, $email, $code)
+    {
         self::$name = $name;
         $this->lastname = $lastname;
         $this->department = $department;
@@ -22,22 +23,32 @@ class Employee {
         $this->code = $code;
     }
 
-    public function getName() {
+    public function getName()
+    {
         return $this->name;
     }
 
-    public function changeName($name) {
+    public function changeName($name)
+    {
         $this->name = $name;
     }
 
-    public static function getEmployees() {
+    public static function getEmployees()
+    {
         echo "Echo from the static method";
+    }
+
+    public static function getEmployeeName()
+    {
+        return self::$name;
     }
 }
 
-Employee::getEmployees();
+// Employee::getEmployees();
 
 $john = new Employee('John', 'Doe', 'IT', 'jdoe@me.com', 006);
+
+echo $john::getEmployeeName();
 
 echo '<pre>';
 var_dump($john);
