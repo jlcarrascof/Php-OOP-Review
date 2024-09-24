@@ -8,14 +8,14 @@ class Employee {
     // Private: can only be accessed from within the class
     // Protected: can only be accessed from within the class and its subclasses
 
-    protected $name;
+    protected static $name;
     public $lastname;
     public $department;
     public $email;
     public $code;
 
     public function __construct($name, $lastname, $department, $email, $code) {
-        $this->name = $name;
+        self::$name = $name;
         $this->lastname = $lastname;
         $this->department = $department;
         $this->email = $email;
@@ -38,10 +38,6 @@ class Employee {
 Employee::getEmployees();
 
 $john = new Employee('John', 'Doe', 'IT', 'jdoe@me.com', 006);
-
-echo $john->changeName('Johnny');
-
-echo $john->getName();
 
 echo '<pre>';
 var_dump($john);
