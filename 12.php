@@ -1,7 +1,7 @@
 <?php
 include 'includes/header.php';
 
-// Access modifiers: public, private, protected
+// Static methods and properties
 class Employee {
 
     // Public: can be accessed from everywhere
@@ -31,13 +31,3 @@ class Employee {
     }
 
 }
-
-$john = new Employee('John', 'Doe', 'IT', 'jdoe@me.com', 006);
-
-echo $john->changeName('Johnny');
-
-echo $john->getName();
-
-echo '<pre>';
-var_dump($john);
-echo '</pre>';
